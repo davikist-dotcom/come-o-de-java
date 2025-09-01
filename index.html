@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Boa</h1>
+    <br>
+    <label>numero 1</label> <br>
+    <input type="text" id="num1">
+    <br>
+    <label>numero 2</label> <br>
+    <input type="text" id="num2">
+    <br>
+     
+    <button onclick="parametro(1)">1</button>
+    <button onclick="parametro(2)">2</button>
+    <button onclick="parametro(3)">3</button>
+    <button onclick="parametro(4)">4</button>
+    <button onclick="parametro(5)">5</button>
+    <button onclick="parametro(6)">6</button>
+    <button onclick="parametro(7)">7</button>
+    <button onclick="parametro(8)">8</button>
+    <button onclick="parametro(9)">9</button>
+    <button onclick="parametro('+')">+</button>
+    <button onclick="parametro('*')">*</button>
+    <button onclick="parametro('/')">/</button>
+    <button onclick="Resultado()">Resultado</button>
+   <br>
+     
+
+
+
+
+
+</body>
+</html>
+<script>
+
+      function Resultado(){
+        num1Var = document.getElementById('num1')
+        resultado = eval(num1Var.value)
+        alert("Agora é só fazer a soma " + resultado)
+      }
+      function parametro(numero){
+        num1Var = document.getElementById('num1')
+        num1Var.value = num1Var.value + numero
+      }
+
+
+
+</script>
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+<img src="https://i.ytimg.com/vi/H42YbifjHLc/sddefault.jpg?v=6574f3ad">
